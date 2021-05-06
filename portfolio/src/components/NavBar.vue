@@ -5,7 +5,9 @@
       dark
     >
       
-      <v-toolbar-title class="font-weight-bold">portfolio</v-toolbar-title>
+      <v-toolbar-title>
+        <img src="../assets/hud_circle.png" height="80" alt="">
+      </v-toolbar-title>
 
       <v-spacer></v-spacer>
 
@@ -14,7 +16,7 @@
       <v-btn
       text
       color="white"
-      class="text-lowercase"
+      class="text-uppercase"
       >
         <a id="navigationbutton" href="#whole">ABOUT ME</a>
         
@@ -23,8 +25,8 @@
       <v-btn
       text
       color="white"
-      class="text-lowercase">
-      <a id="navigationbutton" href="#servicebody">
+      class="text-uppercase">
+      <a id="navigationbutton" href="#gallery">
         WORK
         </a>
       </v-btn>
@@ -32,8 +34,8 @@
       <v-btn
       text
       color="white"
-      class="text-lowercase">
-        <a id="navigationbutton" href="#skillsbody">RESUME</a>
+      class="text-uppercase">
+        <a id="navigationbutton" href="#">RESUME</a>
       </v-btn>
     </div>
     <v-app-bar-nav-icon @click="drawer = true"
@@ -44,6 +46,7 @@
       absolute
       temporary
       color="black"
+      width="100%"
       
     >
       <v-list
@@ -59,7 +62,7 @@
           </v-list-item>
 
           <v-list-item>
-            <v-list-item-title class="white--text" id="burgerbuttons"><a id="navigationbutton" href="#servicebody">WORK</a></v-list-item-title>
+            <v-list-item-title class="white--text" id="burgerbuttons"><a id="navigationbutton" href="#gallery">WORK</a></v-list-item-title>
           </v-list-item>
 
           <v-list-item>
@@ -90,14 +93,15 @@
     font-size: 2em;
     margin: 25px;
     padding: 10px;
+    color: #FFDD00;
   }
 
   #navigationbutton{
     text-decoration: none;
-    color: white;
+    color: #FFDD00;
   }
 
-  @media only screen and (min-width: 749px) {
+  @media only screen and (min-width: 992px) {
     #burger {
       display: none;
     }

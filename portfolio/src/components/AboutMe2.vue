@@ -1,15 +1,15 @@
 <template>
-  <div id="whole">
-    <div id="main">
-        </div>
+  <div id="whole" class="black" >
         <div id="right" > 
         <v-img id="aboutmeimg"
-        :src="require('../assets/portfoliopic.png')"></v-img>
+        :src="require('../assets/picportfolio.png')"></v-img>
         </div>
         <div class="text" id="aboutmetext" >
-             <p>
+             <h1 id="bigtext">HI THERE!</h1>
+             <p id="smalltext1">
              My name is Ines Piątkowska. I'm a graphic designer and an aspiring creative director. My main skills include creative/art. Direction, UX & UI design.
-            I have experience in logo creation, web design, content creation and editing.
+             </p>
+            <p id="smalltext2">I have experience in logo creation, web design, content creation and editing.
             I am always looking for new ways to showcase my style and creativity through design and film.
             </p>
     </div>
@@ -43,85 +43,153 @@
 
 <style lang="scss">
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
 
   template {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
+    background-color: black;
+    
   }
 
   #whole{
-      height: 235vh;
-      background: #F2F2F2;
+      height: auto;
       display: flex;
-      flex-direction: row;
-  }
-
-  #main{
-      display: flex;
-      justify-content: space-between;
+      flex-direction: column-reverse;
+      background: black;
       align-items: center;
-      flex-direction: column;
-      padding: 80px 2px;
+      justify-content: space-around;
+      overflow-x: hidden;
+
   }
 
-    #aboutmetitle{
-        color: black;
-        font-size: 5em;
-        text-transform: lowercase;
-        font-weight: normal;
-        position: relative;
-        transform: translateX(-5%);
+    #bigtext{
+        max-width: 700px;
+        font-size: 40px;
+        padding: 40px;
+        margin-bottom: 10px;
+        color: white;
+        letter-spacing: 20px;
     }
 
-    #aboutmetext{
-        max-width: 700px;
-        font-size: 20px;
-        padding: 10px;
-        margin-bottom: 30px;
-        margin-top: 300px;
+    #smalltext1{
+        max-width: 600px;
+        font-size: 16px;
+        padding: 40px;
+        margin-bottom: 10px;
+        margin-top: 0px;
+        color: white;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 600;
+    }
+
+    #smalltext2{
+      max-width: 600px;
+      font-size: 16px;
+      padding: 40px;
+      margin-top: 0px;
+      color: white;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 600;
     }
 
     #aboutmeimg {
       height: 300px;
-      width: 300px;
-      
+      width: 200px;
     }
 
-  @media only screen and (min-width: 403px){
+  @media only screen and (min-width: 992px){
     #whole{
-      height: 210vh;
-      background: #F2F2F2;
-  }
+      height: auto;
+      display: flex;
+      flex-direction: row;
+      background: black;
+      align-items: center;
+      justify-content: space-around;
+
   }
 
-@media only screen and (min-width: 958px) {
-  #aboutmetext{
-        max-width: 958px;
-        font-size: 20px;
-        padding: 0;
-        margin-bottom: 30px;
+    #bigtext{
+        max-width: 700px;
+        font-size: 50px;
+        padding: 40px;
+        margin-bottom: 10px;
+        color: white;
+        letter-spacing: 20px;
     }
-}
 
+    #smalltext1{
+        max-width: 600px;
+        font-size: 18px;
+        padding: 40px;
+        margin-bottom: 10px;
+        margin-top: 0px;
+        color: white;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 600;
+    }
 
+    #smalltext2{
+      max-width: 600px;
+      font-size: 18px;
+      padding: 40px;
+      margin-top: 0px;
+      color: white;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 600;
+    }
 
-@media only screen and (min-width: 1200px) {
-  #whole{
-      height: 240vh;
-      background: #F2F2F2;
+    #aboutmeimg {
+      height: 300px;
+      width: 200px;
+    }
   }
-  
 
-}
+  @media only screen and (min-width: 1312px){
+    #whole{
+      height: auto;
+      display: flex;
+      flex-direction: row;
+      background: black;
+      align-items: center;
+      justify-content: space-around;
 
-
-@media only screen and (min-width: 1400px) {
-  #whole{
-      height: 220vh;
-      background: #F2F2F2;
   }
-}
 
+    #bigtext{
+        max-width: 700px;
+        font-size: 60px;
+        padding: 40px;
+        margin-bottom: 10px;
+        color: white;
+        letter-spacing: 20px;
+    }
 
+    #smalltext1{
+        max-width: 600px;
+        font-size: 20px;
+        padding: 40px;
+        margin-bottom: 10px;
+        margin-top: 0px;
+        color: white;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 600;
+    }
+
+    #smalltext2{
+      max-width: 600px;
+      font-size: 20px;
+      padding: 40px;
+      margin-top: 0px;
+      color: white;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 600;
+    }
+
+    #aboutmeimg {
+      height: 500px;
+      width: 350px;
+    }
+  }
 </style>
