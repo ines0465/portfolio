@@ -23,6 +23,17 @@
       
     </v-row>
 
+    <v-row id="row">
+
+       <v-col id="column">
+         <v-img class="image" :src="require('/src/assets/art7.png')" />
+        <v-img class="image" :src="require('/src/assets/art8.png')" />
+        <v-img class="image" :src="require('/src/assets/art9.png')" />
+        
+      </v-col>
+      
+    </v-row>
+
 
 
   </div>
