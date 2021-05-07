@@ -1,14 +1,16 @@
 <template>
-  <div class="black" id="aboutmebody">
-    <div id="left">
-      <v-img id="name"
-      :src="require('../assets/name.png')"></v-img>
-    </div>
-    <div id="right">
-      <v-img id="lineart"
-      :src="require('../assets/outline.png')"></v-img>
-    </div>
-  </div>
+    <v-img :src="require('/src/assets/backgroundHud.png')" id="bg">
+        <div id="aboutmebody">
+          <div id="left">
+            <v-img id="name"
+            :src="require('../assets/name.png')"></v-img>
+          </div>
+          <div id="right">
+            <v-img id="lineart"
+            :src="require('../assets/outline.png')"></v-img>
+          </div>
+        </div>
+      </v-img>
 </template>
 
 <style lang="scss">
@@ -21,6 +23,12 @@ template {
     background-color: black;
   }
 
+  #bg{
+    width: 100%;
+    height: 100vh;
+    display: fixed;
+
+  }
   #aboutmebody {
     height: 100vh;
     display: flex;
@@ -74,6 +82,7 @@ template {
       width: 300px;
       height: 350px;
       transform: scale(0.6);
+      z-index: 11;
   }
 
   #name{

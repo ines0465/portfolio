@@ -10,6 +10,7 @@
     <AboutMe2 />
     <VideoCv /> 
     <Gallery />
+    <VividVideo /> 
     <Resume />
     <v-btn
             v-scroll="onScroll"
@@ -41,6 +42,7 @@ export default {
     VideoCv: () => import('@/components/CvVideo'),
     Gallery: () => import('@/components/Gallery'),
     Resume: () => import('@/components/Resume'),
+    VividVideo: () => import('@/components/VividVideo'),
   },
 
   data: () => ({
@@ -83,7 +85,7 @@ export default {
     width: 100px;
     position: fixed;
     right: 0;
-    margin-top: 0.5vh;
+    top:5vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;

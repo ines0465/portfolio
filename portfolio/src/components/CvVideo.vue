@@ -1,14 +1,16 @@
 <template>
-  <div id="cvbody" class="black" >
-    <div id="video" data-aos="fade-right" data-aos-offset="300" data-aos-duration="1000">
-        <iframe src="https://www.youtube.com/embed/LKnso2aqAq8" title="Video CV" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-    <div id="socials">
-        <a id="email" href="mailto:ines.piatkowska1@gmail.com" target="_blank">EMAIL</a>
-        <a id="linkedin" href="https://www.linkedin.com/in/inespiatkowska/" target="_blank">LINKEDIN</a>
-        <a id="instagram" href="https://www.instagram.com/ineesxx/" target="_blank">INSTAGRAM</a>
-    </div>
-  </div>
+    <v-img :src="require('/src/assets/backgroundHud.png')" id="bg">
+        <div id="cvbody" >
+          <div id="video" data-aos="fade-right" data-aos-offset="300" data-aos-duration="1000">
+              <iframe src="https://www.youtube.com/embed/LKnso2aqAq8" title="Video CV" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div id="socials">
+              <a id="email" href="mailto:ines.piatkowska1@gmail.com" target="_blank">EMAIL</a>
+              <a id="linkedin" href="https://www.linkedin.com/in/inespiatkowska/" target="_blank">LINKEDIN</a>
+              <a id="instagram" href="https://www.instagram.com/ineesxx/" target="_blank">INSTAGRAM</a>
+          </div>
+        </div>
+    </v-img>
 </template>
 
 <script>
@@ -39,7 +41,6 @@
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
-    background-color: black;
     
   }
 
@@ -50,6 +51,12 @@
       align-items: center;
       padding: 50px;
       overflow-x: hidden;
+  }
+  #bg{
+    width: 100vw;
+    height: 100vh;
+    display: fixed;
+
   }
 
     iframe {

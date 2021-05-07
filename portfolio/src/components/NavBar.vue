@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-app-bar
-      color="black"
+      color="#151415"
       dark
     >
       
@@ -35,7 +35,7 @@
       text
       color="white"
       class="text-uppercase">
-        <a id="navigationbutton" href="#">RESUME</a>
+        <a id="navigationbutton" href="#resume">RESUME</a>
       </v-btn>
     </div>
     <v-app-bar-nav-icon @click="drawer = true"
@@ -45,7 +45,7 @@
       v-model="drawer"
       absolute
       temporary
-      color="black"
+      color="#151415"
       width="100%"
       
     >
@@ -57,16 +57,16 @@
           v-model="group"
           
         >
-          <v-list-item>
+          <v-list-item @click="drawer = false">
             <v-list-item-title class="white--text" id="burgerbuttons"><a id="navigationbutton" href="#whole">ABOUT ME</a></v-list-item-title>
           </v-list-item>
 
-          <v-list-item>
+          <v-list-item @click="drawer = false">
             <v-list-item-title class="white--text" id="burgerbuttons"><a id="navigationbutton" href="#gallery">WORK</a></v-list-item-title>
           </v-list-item>
 
-          <v-list-item>
-            <v-list-item-title class="white--text" id="burgerbuttons"><a id="navigationbutton" href="#skillsbody">RESUME</a></v-list-item-title>
+          <v-list-item @click="drawer = false">
+            <v-list-item-title class="white--text" id="burgerbuttons"><a id="navigationbutton" href="#resume">RESUME</a></v-list-item-title>
           </v-list-item>
         </v-list-item-group>
       </v-list>

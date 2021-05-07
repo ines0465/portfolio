@@ -1,19 +1,21 @@
 <template>
-  <div id="whole" class="black" >
-        <div id="right" > 
-        <v-img id="aboutmeimg"
-        :src="require('../assets/picportfolio.png')"></v-img>
-        </div>
-        <div class="text" id="aboutmetext" >
-             <h1 id="bigtext">HI THERE!</h1>
-             <p id="smalltext1">
-             My name is Ines Piątkowska. I'm a graphic designer and an aspiring creative director. My main skills include creative/art. Direction, UX & UI design.
-             </p>
-            <p id="smalltext2">I have experience in logo creation, web design, content creation and editing.
-            I am always looking for new ways to showcase my style and creativity through design and film.
-            </p>
+<v-img :src="require('/src/assets/backgroundHud.png')" id="bg">
+    <div id="whole" >
+          <div id="right" > 
+          <v-img id="aboutmeimg"
+          :src="require('../assets/picportfolio.png')"></v-img>
+          </div>
+          <div class="text" id="aboutmetext" >
+              <h1 id="bigtext">HI THERE!</h1>
+              <p id="smalltext1">
+              My name is Ines Piątkowska. I'm a graphic designer and an aspiring creative director. My main skills include creative/art. Direction, UX & UI design.
+              </p>
+              <p id="smalltext2">I have experience in logo creation, web design, content creation and editing.
+              I am always looking for new ways to showcase my style and creativity through design and film.
+              </p>
+      </div>
     </div>
-  </div>
+  </v-img>
 </template>
 
 
@@ -49,18 +51,22 @@
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
-    background-color: black;
-    
+
   }
 
   #whole{
       height: auto;
       display: flex;
       flex-direction: column-reverse;
-      background: black;
       align-items: center;
       justify-content: space-around;
       overflow-x: hidden;
+
+  }
+  #bg{
+    width: 100vw;
+    height: 100vh;
+    display: fixed;
 
   }
 
@@ -104,7 +110,6 @@
       height: auto;
       display: flex;
       flex-direction: row;
-      background: black;
       align-items: center;
       justify-content: space-around;
 
@@ -151,7 +156,6 @@
       height: auto;
       display: flex;
       flex-direction: row;
-      background: black;
       align-items: center;
       justify-content: space-around;
 

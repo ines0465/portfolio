@@ -1,5 +1,5 @@
 <template>
-  <div class="black" id="gallery">
+  <div id="gallery">
     <v-row id="mywork">
       <h1 id="myworktitle">MY WORK</h1>
     </v-row>
@@ -46,7 +46,6 @@ template {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
-    background-color: black;
   }
 
 #gallery {
@@ -56,6 +55,7 @@ template {
   justify-content: space-between;
   flex-direction: column;
   padding: 20px;
+  background-color:#151415;
 
 }
 #mywork{
@@ -79,7 +79,7 @@ template {
   margin: 0;
 }
 .image{
-  width: 10%;
+  width: 30%;
   height: 30vh;
   margin: 1vw;
 }
@@ -98,6 +98,7 @@ template {
   justify-content: space-between;
   flex-direction: column;
   padding: 20px;
+  background-color:#151415;
 
   }
   #mywork{

@@ -1,5 +1,5 @@
 <template>
-  <div class="black" id="resumebody">
+  <div id="resumebody">
     <v-row id="resume">
       <h1 id="resumetitle">RESUME</h1>
     </v-row>
@@ -18,7 +18,6 @@ template {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
-    background-color: black;
   }   
 
 #resumebody {
@@ -28,12 +27,12 @@ template {
   justify-content: space-between;
   flex-direction: column;
   padding: 20px;
+  background-color:#151415;
 
 }
 #resume{
   width: 100%;
   justify-content: center;
-  margin-top: 40px;
 }
 
 #resumetitle{
